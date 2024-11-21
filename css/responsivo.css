@@ -1,0 +1,69 @@
+/* Reseta os margens e o padding para garantir um layout consistente */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Faz o layout da página usar toda a largura e altura da tela */
+html, body {
+    width: 100%;
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+/* A parte principal do conteúdo da página */
+.container {
+    display: flex;
+    flex-wrap: wrap;  /* Permite que os itens quebrem para a próxima linha se necessário */
+    justify-content: center;  /* Centraliza os itens horizontalmente */
+    padding: 20px;
+}
+
+/* Cada projeto ou bloco */
+.projeto {
+    width: 100%;  /* Por padrão, os projetos ocupam 100% da largura */
+    margin: 10px 0;  /* Margens para separar os projetos */
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Ajusta o layout para telas maiores */
+@media screen and (min-width: 768px) {
+    .projeto {
+        width: 45%;  /* Em tablets e dispositivos com tela maior, os projetos ocupam 45% da largura */
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .projeto {
+        width: 30%;  /* Em telas grandes (como desktops), os projetos ocupam 30% da largura */
+    }
+}
+
+/* Adiciona responsividade ao texto */
+h1, h2, h3 {
+    font-size: 2em;  /* Tamanho de fonte padrão */
+}
+
+@media screen and (max-width: 768px) {
+    h1, h2, h3 {
+        font-size: 1.5em;  /* Tamanho menor de fonte em dispositivos móveis */
+    }
+}
+
+/* Tornar a imagem do projeto responsiva */
+.projeto img {
+    width: 100%;  /* Garante que a imagem ocupe 100% da largura disponível */
+    border-radius: 8px;
+}
+
+/* Ajuste para quando a tela for menor que 480px */
+@media screen and (max-width: 480px) {
+    .projeto {
+        width: 100%;  /* Para telas muito pequenas (celulares), os projetos ocupam toda a largura */
+    }
+}

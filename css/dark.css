@@ -1,0 +1,19 @@
+.text {
+    font-size: 2rem;
+    color: chartreuse;
+    display: flex;
+    gap: 1rem;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center;    /* Centraliza verticalmente */
+    height: 10vh;          /* Ocupa a altura total da tela */
+}
+
+.letra {
+    transition: transform 0.5s, opacity 0.3s; /* Correção na sintaxe */
+    cursor: pointer;
+}
+
+.letra:hover {
+    transform: translate3d(30px, -30px, 20px) rotateZ(360deg);
+    opacity: 0.5; /* Ajustado para ser um valor válido */
+}

@@ -1,0 +1,146 @@
+#menu li:nth-child(4) {
+    color: #333; /* Texto escuro */
+    padding: 10px 15px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+  }
+
+  #menu li:nth-child(4):hover {
+    background-color: #4682b4; /* Azul escuro no hover */
+    color: white;
+  }
+
+    /* ___________________________________________________________ */
+
+    /* Estilo da seção contato */
+#contato {
+  text-align: center;
+  margin-top: 50px;
+  padding: 50px 20px;
+}
+
+#contato h1 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: rgb(11, 136, 73);
+}
+
+#contato p {
+  font-size: 1.2em;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+/* Estilo dos ícones sociais */
+.social-icons {
+  display: flex;
+  justify-content: flex-start; /* Alinha os ícones à esquerda */
+  flex-wrap: wrap; /* Permite que os ícones quebrem para a próxima linha */
+  gap: 20px; /* Espaçamento entre os ícones */
+  margin-top: 20px; /* Distância entre o texto de contato e o ícone */
+}
+
+/* Ícones */
+.social-icons a {
+  font-size: 7em; /* Tamanho inicial do ícone */
+  text-decoration: none;
+  transition: transform 0.3s ease, color 0.3s ease; /* Efeito de transição */
+  flex-grow: 1; /* Faz com que o ícone ocupe o maior espaço possível */
+  max-width: 45%; /* Limita o tamanho máximo do ícone para que caibam 2 ícones por linha */
+  text-align: center; /* Garante que os ícones sejam centralizados dentro de seus blocos */
+  color: #333; /* Cor padrão para os ícones */
+}
+
+/* Efeito hover nos ícones */
+.social-icons a:hover {
+  transform: scale(1.2); /* Aumenta o tamanho do ícone */
+}
+
+/* Ícones com cores específicas */
+.social-icons .whatsapp {
+  color: #25D366; /* Cor do WhatsApp */
+}
+
+.social-icons .whatsapp:hover {
+  color: #128C7E; /* Cor ao passar o mouse no WhatsApp */
+}
+
+.social-icons .email {
+  color: #D44638; /* Cor do E-mail */
+}
+
+.social-icons .email:hover {
+  color: #B10000; /* Cor ao passar o mouse no E-mail */
+}
+
+.social-icons .instagram {
+  color: #E4405F; /* Cor do Instagram */
+}
+
+.social-icons .instagram:hover {
+  color: #C13584; /* Cor ao passar o mouse no Instagram */
+}
+
+.social-icons .twitter {
+  /* color: #1DA1F2; Cor padrão do Twitter */
+  color: black;
+}
+
+.social-icons .twitter:hover {
+  color: #0d95e8; /* Cor ao passar o mouse */
+}
+
+.social-icons .github {
+  color: #333; /* Cor do GitHub */
+}
+
+.social-icons .github:hover {
+  color: #6e5494; /* Cor ao passar o mouse no GitHub */
+}
+
+.social-icons .linkedin {
+  color: #0077B5; /* Cor do LinkedIn */
+}
+
+.social-icons .linkedin:hover {
+  color: #006097; /* Cor ao passar o mouse no LinkedIn */
+}
+
+/* Responsividade - Ajuste de tamanho e alinhamento dos ícones */
+@media (max-width: 1200px) {
+  .social-icons a {
+    font-size: 6em; /* Tamanho dos ícones para telas médias */
+  }
+}
+
+@media (max-width: 992px) {
+  .social-icons a {
+    font-size: 5em; /* Tamanho dos ícones para telas médias pequenas */
+  }
+}
+
+@media (max-width: 768px) {
+  .social-icons a {
+    font-size: 4em; /* Tamanho dos ícones para telas pequenas */
+  }
+  .social-icons {
+    gap: 30px; /* Ajuste o espaçamento entre os ícones para telas pequenas */
+  }
+}
+
+@media (max-width: 600px) {
+  .social-icons a {
+    font-size: 3.5em; /* Tamanho dos ícones para telas muito pequenas */
+    flex-basis: 45%; /* Dois ícones por linha */
+  }
+}
+
+@media (max-width: 480px) {
+  .social-icons a {
+    font-size: 3em; /* Tamanho dos ícones para telas muito pequenas */
+    flex-basis: 45%; /* Dois ícones por linha */
+  }
+  .social-icons {
+    gap: 20px; /* Ajuste o espaçamento entre os ícones para telas muito pequenas */
+  }
+}

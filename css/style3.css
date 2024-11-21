@@ -1,0 +1,116 @@
+/* Estilos do Header */
+header {
+    background-color: #2d3b55; /* Cor padrão do header */
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    box-sizing: border-box;
+    transition: background-color 0.3s ease; /* Transição suave para mudar a cor */
+  }
+  
+  /* Logo */
+  header .logo h1 {
+    font-size: 24px;
+    color: chartreuse;
+  }
+  
+  header .logo img {
+    height: 50px;
+    width: auto;
+  }
+  
+  /* Menu - Lista */
+  nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color: #2d3b55; /* Cor de fundo do menu */
+    transition: background-color 0.3s ease; /* Transição suave para a transparência */
+  }
+  
+  nav ul li {
+    margin: 0 15px;
+  }
+  
+  nav ul li a {
+    color: chartreuse;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  
+  /* Ícone do Menu Hambúrguer */
+  .menu-icon {
+    font-size: 30px;
+    cursor: pointer;
+    display: none; /* Esconde o ícone em telas grandes */
+    color: white;
+    background: transparent;
+    border: none;
+  }
+  
+  /* Estilos para a responsividade */
+  @media (max-width: 768px) {
+    /* Logo - Ajuste para telas pequenas */
+    header {
+      flex-direction: column; /* Coloca logo e menu em coluna */
+      align-items: flex-start; /* Alinha à esquerda */
+    }
+  
+    .logo h1 {
+      font-size: 20px;
+      margin-left: 10px;
+    }
+  
+    /* Menu de navegação - esconde por padrão em telas pequenas */
+    nav ul {
+      display: none; /* Esconde o menu */
+      flex-direction: column; /* Exibe itens empilhados */
+      width: 100%;
+      padding: 10px 0;
+      margin-top: 20px;
+      background-color: transparent; /* Tornar fundo transparente inicialmente */
+    }
+  
+    /* Quando o menu estiver ativo, ele será exibido e transparente */
+    nav ul.active {
+      display: flex;
+      background-color: transparent; /* Torna o menu transparente quando ativo */
+    }
+  
+    /* Exibe o ícone de hambúrguer em telas pequenas */
+    .menu-icon {
+      display: block;
+    }
+  
+    /* Estilos dos itens do menu em telas pequenas */
+    nav ul li {
+      margin: 10px 0;
+      text-align: center; /* Alinha os itens ao centro */
+    }
+  
+    /* Ajuste no link */
+    nav ul li a {
+      font-size: 22px;
+    }
+  }
+  
+  /* Estilos para telas grandes */
+  @media (min-width: 769px) {
+    header {
+      flex-direction: row; /* Para telas maiores, o header fica na linha */
+    }
+  
+    nav ul {
+      display: flex; /* Exibe o menu de forma horizontal */
+    }
+  
+    .menu-icon {
+      display: none; /* Esconde o ícone do menu em telas grandes */
+    }
+  }
+  
