@@ -1,7 +1,3 @@
-/* Centraliza o conteúdo na página */
-
-  
-  /* Estilizando o título (h1) */
   h5 {
     font-family: Arial, sans-serif;
     font-size: 2.5em;
@@ -9,30 +5,26 @@
     margin-bottom: 20px;
   }
   
-  /* Estilizando a imagem */
+
   img {
-    width: auto; /* Define o tamanho da imagem */
-    height: auto; /* Garantindo que a altura seja igual à largura para fazer um círculo perfeito */
-    max-width: 300px;  /* Tamanho máximo da imagem, ajustável conforme necessário */
-    border-radius: 50%; /* Torna a imagem circular */
+    width: auto; 
+    height: auto; 
+    max-width: 300px;  
+    border-radius: 50%; 
     object-fit: cover; /* A imagem preenche o círculo sem distorcer */
-    margin-bottom: 20px; /* Espaço abaixo da imagem */
+    margin-bottom: 20px;
   }
   
 
 
     #img-container {
-    width: 100%; /* A div ocupa toda a largura disponível */
-    height: 200px; /* Altura fixa para todas as divs que contêm as imagens */
+    width: 100%; 
+    height: 200px; 
     position: relative;
     overflow: hidden; /* Garante que nada ultrapasse a div */
   }
 
 
 img:hover {
-    transform: scale(1.2); /* Aumenta a imagem 20% ao passar o mouse */
+    transform: scale(1.2); 
   }
-
-  /* Estilizando o parágrafo (p) */
-
-  

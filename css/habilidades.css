@@ -1,12 +1,12 @@
 #menu li:nth-child(2) {
-    color: #333; /* Texto escuro */
+    color: #333; 
     padding: 10px 15px;
     border-radius: 8px;
     transition: all 0.3s ease;
   }
   
   #menu li:nth-child(2):hover {
-    background-color: #4682b4; /* Azul escuro no hover */
+    background-color: #4682b4;
     color: white;
   }
 

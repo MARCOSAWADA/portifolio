@@ -3,9 +3,9 @@
     color: chartreuse;
     display: flex;
     gap: 1rem;
-    justify-content: center; /* Centraliza horizontalmente */
-    align-items: center;    /* Centraliza verticalmente */
-    height: 10vh;          /* Ocupa a altura total da tela */
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
 }
 
 .letra {

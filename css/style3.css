@@ -1,6 +1,5 @@
-/* Estilos do Header */
 header {
-    background-color: #2d3b55; /* Cor padrão do header */
+    background-color: #2d3b55;
     color: #fff;
     padding: 20px;
     display: flex;
@@ -12,7 +11,7 @@ header {
     transition: background-color 0.3s ease; /* Transição suave para mudar a cor */
   }
   
-  /* Logo */
+
   header .logo h1 {
     font-size: 24px;
     color: chartreuse;
@@ -23,13 +22,12 @@ header {
     width: auto;
   }
   
-  /* Menu - Lista */
   nav ul {
     display: flex;
     list-style: none;
     margin: 0;
     padding: 0;
-    background-color: #2d3b55; /* Cor de fundo do menu */
+    background-color: #2d3b55; 
     transition: background-color 0.3s ease; /* Transição suave para a transparência */
   }
   
@@ -43,22 +41,20 @@ header {
     font-size: 18px;
   }
   
-  /* Ícone do Menu Hambúrguer */
   .menu-icon {
     font-size: 30px;
     cursor: pointer;
-    display: none; /* Esconde o ícone em telas grandes */
+    display: none;
     color: white;
     background: transparent;
     border: none;
   }
   
-  /* Estilos para a responsividade */
+
   @media (max-width: 768px) {
-    /* Logo - Ajuste para telas pequenas */
     header {
-      flex-direction: column; /* Coloca logo e menu em coluna */
-      align-items: flex-start; /* Alinha à esquerda */
+      flex-direction: column;
+      align-items: flex-start;
     }
   
     .logo h1 {
@@ -66,10 +62,10 @@ header {
       margin-left: 10px;
     }
   
-    /* Menu de navegação - esconde por padrão em telas pequenas */
+
     nav ul {
-      display: none; /* Esconde o menu */
-      flex-direction: column; /* Exibe itens empilhados */
+      display: none; 
+      flex-direction: column;
       width: 100%;
       padding: 10px 0;
       margin-top: 20px;
@@ -82,7 +78,7 @@ header {
       background-color: transparent; /* Torna o menu transparente quando ativo */
     }
   
-    /* Exibe o ícone de hambúrguer em telas pequenas */
+    /*ícone de hambúrguer em telas pequenas */
     .menu-icon {
       display: block;
     }
@@ -90,19 +86,18 @@ header {
     /* Estilos dos itens do menu em telas pequenas */
     nav ul li {
       margin: 10px 0;
-      text-align: center; /* Alinha os itens ao centro */
+      text-align: center;
     }
   
-    /* Ajuste no link */
     nav ul li a {
       font-size: 22px;
     }
   }
   
-  /* Estilos para telas grandes */
+  /*telas grandes */
   @media (min-width: 769px) {
     header {
-      flex-direction: row; /* Para telas maiores, o header fica na linha */
+      flex-direction: row; /* Para telas maiores */
     }
   
     nav ul {
